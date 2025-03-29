@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  background-color: #b0b0b0; /* Cinza de fundo */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Container centralizado */
+.container {
+  width: 1100px;
+  height: 1200px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  position: center;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 300;
+  width: 100%;
+  height: 92px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000; /* Garante que o cabeçalho fique acima da sidebar */
+}
+
+.sidebar {
+  width: 508px;
+  height: calc(1200px - 92px); /* Ocupar toda a altura abaixo do cabeçalho */
+  background-color: #9333ea; /* Roxo */
+  color: white;
+  padding: 40px;
+  position: absolute;
+  left: 717px;
+  top: 125px; /* Começa logo abaixo do cabeçalho */
+
+}
+.barra {
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 300px;
+}
+.caixinha-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px; /* Defina o tamanho da caixa */
+  height: 40px; /* Altura semelhante a um campo de input */
+  border: 1px solid #ccc; /* Borda igual a de um input */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: white; /* Fundo branco */
+  color: black; /* Cor do texto */
+  font-size: 16px;
+  padding: 10px;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-start; /* Alinha a imagem à esquerda */
+  margin-left: 47px; /* Ajuste o valor para mover mais à esquerda */
+  margin-top: 30px;
+}
+
+.main-image {
+  width: 100%; /* Ajuste conforme necessário */
+  max-width: 500px; /* Define um tamanho máximo */
+  border-radius: 8px; /* Bordas arredondadas (opcional) */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post-hashtags {
+  font-size: 14px;
+  color: #9333ea;
+  margin-top: 10px;
+}
+/* Centraliza e define uma largura para o conteúdo */
+.content-container {
+  display: flex;
+  justify-content: flex-start; /* Alinha os posts à esquerda */
+  width: 100%;
+  padding: 20px; /* Adapte conforme necessário */
+}
+
+/* Define largura máxima e centraliza */
+.posts-container {
+  width: 560px; /* Ajuste para o tamanho desejado */
+  margin-left: 0px; /* Para afastar da borda */
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Espaçamento entre posts */
+  margin-top: 60px;
+}
+
+/* Estiliza cada post */
+.post {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.post-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify; /* Para um visual mais elegante */
+}
+.post-hashtags {
+  color: #555; /* Defina a cor desejada */
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Garante que todas as hashtags fiquem com a mesma cor e estilo */
+.post-hashtags p, 
+.post-hashtags span {
+  color: inherit; /* Mantém a cor definida na classe principal */
+}
