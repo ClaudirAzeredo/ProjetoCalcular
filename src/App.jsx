@@ -14,10 +14,6 @@ function App() {
         <Barra />
       </header>
 
-      <aside className="sidebar">
-        <Sidebar />
-      </aside>
-
       <div className="image-container">
         <img 
           src="/Imagensd.jpg" 
@@ -39,7 +35,7 @@ function App() {
               conteudo="São nos primeiros anos escolares que as crianças aprendem os fundamentos da matemática, inclusive as quatro operações - soma, subtração, multiplicação e divisão. Qualquer dificuldade que a criança tenha nessa fase se refletirá por toda a sua vida escolar :(  
 
               Aqui você e seu filho irão encontrar exercícios relacionados ao conteúdo ensinado nos primeiros anos escolares e buscará aperfeiçoar seu conhecimento nas operações básicas."
-              hashtags="#MatematicaParaCriancas #Educacao"
+              hashtags= {["#MatematicaParaCriancas", "#Educacao"]}
             />
 
             <Post 
@@ -59,7 +55,11 @@ function App() {
                     #MatematicaParaCriancas #EducacaoMatematica #OperacoesBasicas <br/>
                     #AprendizadoDivertido #FundamentosEscolares #MatematicaFacil #ConfiancaNosNumeros
                   </p>
+                  <aside className="sidebar">
+                  <Sidebar />
+                   </aside>
                 </>
+                
               }
             />
           </div>
